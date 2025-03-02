@@ -1,0 +1,9 @@
+[Unit]
+Description=Outage protection
+
+[Service]
+ExecStart=/usr/bin/supplywatchd
+
+# why systemd
+[Install]
+WantedBy=multi-user.target
